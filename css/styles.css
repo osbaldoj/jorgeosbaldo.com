@@ -1,0 +1,130 @@
+body {
+  font-family: "Montserrat";
+  font-weight: 100;
+  background-color: #fef5ed;
+  text-align: center;
+}
+section {
+  padding: 5% 10%;
+}
+h1 {
+  /* font-family: 'Dancing Script' ; */
+  font-family: "Dancing Script";
+  font-weight: bolder;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 1.5;
+  color: #fef5ed;
+}
+h2 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+h3 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+h4 {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 1rem;
+}
+hr {
+  display: block;
+  background-image: linear-gradient(to right, #fef5ed, #393e46, #fef5ed);
+  border: 0px;
+  height: 1px;
+  width: 80%;
+  text-align: center;
+  margin: 5% auto;
+}
+.iconSize {
+  font-size: 2rem;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 900, "GRAD" 0, "opsz" 48;
+}
+
+.dark {
+  background-color: #222831;
+}
+.light {
+  background-color: #fef5ed;
+}
+.text-white {
+  color: white;
+}
+.text-light {
+  color: #fef5ed;
+}
+.text-red {
+  color: #ff0000;
+}
+.padding {
+  padding: 4% 10%;
+}
+.padding5-10 {
+  padding: 5% 10%;
+}
+.navbar {
+  color: #fef5ed;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.name1 {
+  font-family: "Dancing Script";
+  font-weight: bolder;
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 1.5;
+  color: #fef5ed;
+}
+.first-img {
+  width: 40%;
+}
+
+.pro2 {
+  color: #fef5ed;
+  font-weight: 600;
+}
+.pro {
+  text-decoration: underline;
+  color: #00adb5;
+}
+
+.title {
+  color: #00adb5;
+}
+
+.icon {
+  color: #1b2a49;
+  margin-bottom: 1rem;
+}
+.icon:hover {
+  color: #465881;
+}
+
+.iconwhite {
+  color: #f9f9f9;
+  margin-bottom: 1rem;
+}
+.iconwhite:hover {
+  color: #b7b7b7;
+}
+
+.test-img {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+#press {
+  padding-bottom: 3%;
+  background-color: #465881;
+  text-align: center;
+}
