@@ -1,2 +1,3 @@
 # jorgeosbaldo.com
-my CV website
+
+my CV and Portfolio website
