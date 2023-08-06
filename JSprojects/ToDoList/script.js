@@ -1,7 +1,7 @@
 // let items = [];
 
-const addItem = document.querySelector(".addItem");
-const inputNewItem = document.querySelector(".newItem");
+const addItemBtn = document.querySelector(".addItemBtn");
+const inputNewItem = document.querySelector(".inputNewItem");
 const itemsBox = document.querySelector(".itemsBox");
 const deleteAllBtn = document.querySelector(".deleteAllButton");
 let items = document.querySelectorAll(".item");
@@ -24,6 +24,7 @@ function AddItem() {
   if (inputNewItem.value == "") return;
   const item = inputNewItem.value;
   inputNewItem.value = "";
+  console.log(item);
   const html = `    
     <div class="item newItem">
       <p> ${item} </p>
@@ -50,7 +51,7 @@ function addCheckListener() {
 
 //Listeners
 
-addItem.addEventListener("click", () => {
+addItemBtn.addEventListener("click", () => {
   AddItem();
 });
 
