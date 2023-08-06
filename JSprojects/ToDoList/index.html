@@ -4,18 +4,58 @@
 <head>
   <meta charset="utf-8">
   <title>To do list</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
   <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <div class="box" id='heading'>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-10 col-lg-6 ">
+
+
+        <div class="row justify-content-center heading">
+          <h1>List 1</h1>
+        </div>
+        <div class="row justify-content-center itemsCard bg-light">
+
+          <div class="row ustify-content-center itemsBox">
+
+          </div>
+
+          <div class="row justify-content-center">
+
+            <div class="col-9 itemInput">
+              <input type="text" class="inputNewItem" placeholder="New Item Here" autocomplete="off">
+            </div>
+
+            <div class="col-3 addButton">
+              <a href="" class="btn addItemBtn">+</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="deleteAll">
+          <button type="submit" class="deleteAllButton" name="deleteAll">Delete All</button>
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="itemsCard heading">
     <h1>
       To Do List
     </h1>
   </div>
 
-  <div class="box">
+  <div class="itemsCard">
     <div class="itemsBox">
     </div>
 
@@ -24,15 +64,16 @@
       <button type="submit" class="addItem addButton" name="list">+</button>
     </div>
 
-  </div>
+  </div> -->
 
-  <div class="deleteAll">
-    <button type="submit" class="deleteAllButton" name="deleteAll">Delete All</button>
-  </div>
+
 
 
   <my-footer></my-footer>
   <script type="module" src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
