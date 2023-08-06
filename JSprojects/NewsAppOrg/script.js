@@ -3,8 +3,8 @@
 const searchBar = document.querySelector(".search-bar");
 
 let keyword = "";
-let country = ""; // country=us&
-let category = "categories=tech&"; // category=business&
+let country = "country=us&"; // country=us&
+let category = "category=technology&"; // category=business&
 let url = "";
 
 const searchBtn = document.querySelector(".search-btn");
@@ -20,40 +20,37 @@ categories.forEach((element) => {
 });
 
 //#region TheNewsApi.com
-const token = "api_token=Pp3ewkIHZVqjgbNLSfh3kPQXhcdIk3BQio8qvZJj";
+// const token = "api_token=Pp3ewkIHZVqjgbNLSfh3kPQXhcdIk3BQio8qvZJj";
 
-function setURL() {
-  url =
-    "https://api.thenewsapi.com/v1/news/top?" +
-    keyword +
-    country +
-    category +
-    token;
-}
+// let url =
+//   "https://api.thenewsapi.com/v1/news/top?" +
+//   token +
+//   "&language=en&search='" +
+//   keyword +
+//   "'";
 
 // if (keyword === "") {
 //   url =
-//     "https://api.thenewsapi.com/v1/news/top?language=en&api_token=Pp3ewkIHZVqjgbNLSfh3kPQXhcdIk3BQio8qvZJj";
+//     "https://api.thenewsapi.com/v1/news/top?api_token=Pp3ewkIHZVqjgbNLSfh3kPQXhcdIk3BQio8qvZJj&language=en";
 // }
 //#endregion
 
 //#region NewsApi.org
 
-// const APIkey = "apiKey=2d51e0412500460f9003209d0aed765d";
+const APIkey = "apiKey=2d51e0412500460f9003209d0aed765d";
 
-// function setURL() {
-//   url =
-//     "https://newsapi.org/v2/top-headlines?pageSize=100&sortBy=popularity&" +
-//     keyword +
-//     country +
-//     category +
-//     APIkey;
-//   // console.log(url);
-// }
-//#endregion
-
+function setURL() {
+  url =
+    "https://newsapi.org/v2/top-headlines?pageSize=100&sortBy=popularity&" +
+    keyword +
+    country +
+    category +
+    APIkey;
+  // console.log(url);
+}
 setURL();
 getData();
+//#endregion
 
 searchBtn.addEventListener("click", function () {
   SearchNow();
@@ -67,13 +64,13 @@ searchBar.addEventListener("keyup", function (e) {
 function SearchNow() {
   if (searchBar.value === "") return;
 
-  keyword = "search=" + searchBar.value + "&";
+  keyword = "q=" + searchBar.value + "&";
   searchBar.value = "";
   category = "";
 
   setURL();
   getData();
-  country = "locale=us&";
+  country = "country=us&";
 }
 
 const newsBox = document.querySelector(".newsHolder");
@@ -85,21 +82,21 @@ async function getData() {
   console.log(url);
   console.log(news);
 
-  for (let i = 0; i < news.data.length; i++) {
+  for (let i = 0; i < news.articles.length; i++) {
     const html = `
                 <div class="col-md-6 col-lg-4 col-xl-3">
                   <div class="newsCard">
                       <div class="newsImage">
-                          <img src="${news.data[i].image_url}" alt="">
+                          <img src="${news.articles[i].urlToImage}" alt="">
                       </div>
                       <div class="newsTitle">
-                          <a href="${news.data[i].url}" target="_blank">
-                              <h3>${news.data[i].title}</h3>
+                          <a href="${news.articles[i].url}" target="_blank">
+                              <h3>${news.articles[i].title}</h3>
                           </a>
                       </div>
                       <div class="newsDescription">
-                      <a href="${news.data[i].url}" target="_blank">
-                          <p>${news.data[i].snippet}</p>
+                      <a href="${news.articles[i].url}" target="_blank">
+                          <p>${news.articles[i].description}</p>
                       </a>
                       </div>
                   </div>
