@@ -31,12 +31,12 @@ function setURL() {
     token;
 }
 
-// if (keyword === "") {
-//   url =
-//     "https://api.thenewsapi.com/v1/news/top?language=en&api_token=Pp3ewkIHZVqjgbNLSfh3kPQXhcdIk3BQio8qvZJj";
-// }
 //#endregion
+//the news cathcer api
+//const newApi = "MbKgTQ3hClXVYIJ0MEbdDxAwRacxxYw4fdMcyvYSBaM";
+// curl -XGET 'https://api.newscatcherapi.com/v2/search?q=Tesla' -H 'x-api-key: MbKgTQ3hClXVYIJ0MEbdDxAwRacxxYw4fdMcyvYSBaM'
 
+//api.newscatcherapi.com/v2/search?q=Tesla&x-api-key=MbKgTQ3hClXVYIJ0MEbdDxAwRacxxYw4fdMcyvYSBaM
 //#region NewsApi.org
 
 // const APIkey = "apiKey=2d51e0412500460f9003209d0aed765d";
@@ -52,7 +52,7 @@ function setURL() {
 // }
 //#endregion
 
-setURL();
+https: setURL();
 getData();
 
 searchBtn.addEventListener("click", function () {
