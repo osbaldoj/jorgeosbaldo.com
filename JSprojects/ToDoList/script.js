@@ -1,5 +1,3 @@
-// let items = [];
-
 const addItemBtn = document.querySelector(".addItemBtn");
 const inputNewItem = document.querySelector(".inputNewItem");
 const itemsBox = document.querySelector(".itemsBox");
