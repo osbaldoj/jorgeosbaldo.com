@@ -13,6 +13,9 @@ h1 {
   color: #fff;
   padding: 10px;
 }
+.padding {
+  padding: 5% 10%;
+}
 
 .itemsCard {
   width: 100%;
