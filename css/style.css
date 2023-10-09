@@ -59,14 +59,18 @@ hr {
       from(#222),
       to(rgba(34, 34, 34, 0))
     ),
-    url(../images/STDgame.png);
+    url(../images/bannertitle.png);
 
-  background-image: linear-gradient(360deg, #222, rgba(34, 34, 34, 0)),
-    url(../images/STDgame.png);
+  background-image: linear-gradient(360deg, #20202054, rgba(34, 34, 34, 0)),
+    url(../images/bannertitle.png);
   background-position: 0px 0px, 50% 50%;
   background-size: auto, cover;
 }
-
+.gameTitle {
+  /* font-weight: 600; */
+  color: #1b2a49;
+  font-size: 2.5rem;
+}
 .rpgGame-bg {
   min-height: 400px;
   background-image: -webkit-gradient(
